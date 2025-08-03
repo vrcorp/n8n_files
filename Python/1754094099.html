@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modern PHP Code Snippet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <style>
+      pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{color:#abb2bf;background:#282c34}.hljs-comment,.hljs-quote{color:#5c6370;font-style:italic}.hljs-doctag,.hljs-formula,.hljs-keyword{color:#c678dd}.hljs-deletion,.hljs-name,.hljs-section,.hljs-selector-tag,.hljs-subst{color:#e06c75}.hljs-literal{color:#56b6c2}.hljs-addition,.hljs-attribute,.hljs-meta .hljs-string,.hljs-regexp,.hljs-string{color:#98c379}.hljs-attr,.hljs-number,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-pseudo,.hljs-template-variable,.hljs-type,.hljs-variable{color:#d19a66}.hljs-bullet,.hljs-link,.hljs-meta,.hljs-selector-id,.hljs-symbol,.hljs-title{color:#61aeee}.hljs-built_in,.hljs-class .hljs-title,.hljs-title.class_{color:#e6c07b}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.hljs-link{text-decoration:underline}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+</head>
+<body style="display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; background-color: #1a1a1a; background-image: radial-gradient(circle at top left, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 30%), radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 40%);">
+
+<div style="transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; border-radius: 15px;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.7)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.5)';">
+
+    <div style="background: rgba(40, 44, 52, 0.7); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 15px; max-width: 800px; width: 90vw; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+    
+        <div style="display: flex; align-items: center; padding: 12px 20px; background-color: rgba(0,0,0,0.2); border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+            <div style="display: flex; margin-right: 12px;">
+                <span style="height: 12px; width: 12px; border-radius: 50%; background-color: #ff5f56; display: block; margin-right: 8px;"></span>
+                <span style="height: 12px; width: 12px; border-radius: 50%; background-color: #ffbd2e; display: block; margin-right: 8px;"></span>
+                <span style="height: 12px; width: 12px; border-radius: 50%; background-color: #27c93f; display: block;"></span>
+            </div>
+            <span style="color: #bbb; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 0.9rem; font-weight: 500;">Contoh Fungsi Perhitungan Faktorial</span>
+        </div>
+
+        <div style="padding: 20px; font-family: 'Fira Code', 'Consolas', monospace; font-size: 1rem; overflow-x: auto;">
+            <pre style="margin: 0;"><code class="language-Python">
+# Fungsi rekursif untuk menghitung faktorial
+def factorial(n):
+  # Basis kasus: faktorial dari 0 adalah 1
+  if n == 0:
+    return 1
+  # Kasus rekursif: n! = n * (n-1)!
+  else:
+    return n * factorial(n-1)
+
+# Contoh penggunaan
+angka = 5
+hasil = factorial(angka)
+print(f"Faktorial dari {angka} adalah {hasil}")
+
+            </code></pre>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script>
+    // Initialize Highlight.js after page loads
+    document.addEventListener('DOMContentLoaded', (event) => {
+      document.querySelectorAll('pre code').forEach((block) => {
+        hljs.highlightElement(block);
+      });
+    });
+</script>
+
+</body>
+  
+</html>
